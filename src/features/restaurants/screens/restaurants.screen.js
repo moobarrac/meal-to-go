@@ -11,13 +11,13 @@ const RestaurantsScreen = () => {
   `;
 
   const SearchContainer = styled(View)`
-    padding: 10px;
+    padding: ${(props) => props.theme.space[2]};
   `;
 
   const RestaurantsListContainer = styled(View)`
-    background-color: blue;
+    background-color: ${(props) => props.theme.colors.bg.primary};
     flex: 1;
-    padding: 20px;
+    padding: ${(props) => props.theme.space[3]};
   `;
 
   const [searchQuery, setSearchQuery] = useState("");
