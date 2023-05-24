@@ -5,17 +5,17 @@ import styled from "styled-components/native";
 
 const RestaurantInfo = ({ restaurant = {} }) => {
   const RestaurantCard = styled(Card)`
-    background-color: white;
+    background-color: ${(props) => props.theme.colors.bg.secondary};
   `;
 
   const RestaurantCardCover = styled(Card.Cover)`
-    padding: 10px;
-    background-color: white;
+    padding: ${(props) => props.theme.space[3]};
+    background-color: ${(props) => props.theme.colors.bg.secondary};
   `;
 
   const Title = styled(Text)`
-    padding: 16px;
-    color: blue;
+    padding: ${(props) => props.theme.space[3]};
+    color: ${(props) => props.theme.colors.ui.primary};
   `;
 
   const {
